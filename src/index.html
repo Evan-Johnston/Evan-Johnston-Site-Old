@@ -35,46 +35,6 @@ for(let i = 0; i < STAR_COUNT; i++){
 console.log(result.substring(0, result.length - 1))
 
 -->
-
-  .rocket {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100px;
-      height: 100px;
-      animation: fly 2s linear infinite;
-    }
-
-    .rocket::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100px;
-      height: 50px;
-      background-color: red;
-      transform: rotate(-45deg);
-    }
-
-    .rocket::after {
-      content: '';
-      position: absolute;
-      top: 100px;
-      left: 0;
-      width: 100px;
-      height: 50px;
-      background-color: red;
-      transform: rotate(45deg);
-    }
-
-    @keyframes fly {
-      from {
-        transform: translateY(0);
-      }
-      to {
-        transform: translateY(-100vh);
-      }
-    }
   
   <body>
 
