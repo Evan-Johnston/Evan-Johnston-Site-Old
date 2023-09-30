@@ -282,6 +282,7 @@ body {
   padding: 0;
   margin: 0; 
   height: 100vh;
+  background: #18191f;
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
