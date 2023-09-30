@@ -245,3 +245,53 @@ pre code {
     rgba(69, 142, 209, 0.08) 50%
   ) !important;
 }
+
+html, body {width:100%; height:100%; margin:0; padding:0;}
+
+
+
+@keyframes bganimation
+{
+0%   {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+      50% {
+           background-position: 
+               150% 100%,
+               -200% 100%,
+               100% 0%,
+               0% 100%;
+      }
+      100% {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+}
+
+
+html {
+    background: 
+        radial-gradient(ellipse at center, rgba(0,0,255,0.3) 0%, rgba(0,0,0,0) 70%), /* niebieski */
+        radial-gradient(ellipse at center, rgba(255,0,0,0.3) 0%, rgba(0,0,0,0) 70%), /*czerwony */
+        radial-gradient(ellipse at center, rgba(0,255,0,0.3) 0%, rgba(0,0,0,0) 70%) /*zielony */
+        #c3d7db;
+    background-repeat: 
+        no-repeat, 
+        no-repeat, 
+        no-repeat;
+    background-size: 
+        900px 900px,
+        900px 900px,
+        900px 900px;
+    background-attachment: fixed;
+    
+    animation:bganimation 30s infinite;
+}
+body { height: 9999px;}
