@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 /* CSS variables ------------------------------------------------- */
 
 :root {
@@ -276,8 +277,6 @@ body{
         transform: scale(1.5);
     }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
 body {
   padding: 0;
