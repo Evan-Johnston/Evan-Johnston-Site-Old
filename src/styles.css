@@ -371,8 +371,5 @@ input[type="checkbox"]:checked ~ div {
   border-radius: 100px;
   backface-visibility: hidden;
   transition: transform 0.3s ease-out;
-
-  &.is-moving {
-    transform: scale(0.7);
   }
 }
