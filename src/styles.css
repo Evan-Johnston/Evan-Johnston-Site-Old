@@ -351,3 +351,11 @@ input[type="checkbox"]:checked ~ div {
   animation: glow 1.5s linear infinite;
 }
 
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
