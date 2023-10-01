@@ -87,5 +87,19 @@ console.log(result.substring(0, result.length - 1))
   </li>
 </ul>
 <span class="cursor"></span>
+    <script>const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+  cursor.setAttribute("style", "top: "+(e.pageY - 7)+"px; left: "+(e.pageX - 7)+"px;")
+})
+
+document.addEventListener('click', () => {
+  cursor.classList.add("onclick");
+  
+  setTimeout (() =>{
+    cursor.classList.remove('onclick');
+  }, 800)
+  
+})</script>
   </body>
 </html>
