@@ -351,8 +351,6 @@ input[type="checkbox"]:checked ~ div {
   animation: glow 1.5s linear infinite;
 }
 
-$background: #2c303a;
-
 body {
   font-family: 'Montserrat', sans-serif;
   background: $background;
