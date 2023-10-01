@@ -359,3 +359,40 @@ input[type="checkbox"]:checked ~ div {
     filter: hue-rotate(360deg);
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1D1D1D;
+  height: 100vh;
+  cursor: none;
+}
+
+
+.cursor {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: #62A0DF;
+  border-radius: 50%;
+  pointer-events: none;
+ 
+}
+
+.onclick {
+ animation: clickAnimation .8s ease-in-out forwards;
+  background: #34F2F2;
+}
+
+@keyframes clickAnimation{
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transfom: scale(1);
+  }
+}
