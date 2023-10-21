@@ -401,73 +401,74 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  text-align: center;
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/debut_light.png");
+:root{
+  --turqouise: #1abc9c;
+  --red: #e74c3c;
+  --blue: #3498db;
+  --purple: #9b59b6;
 }
 
-.nav {
-  display: inline-flex;
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-  background-color: #fff;
-  padding: 0 20px;
-  border-radius: 40px;
-  box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
-}
-
-.nav-item {
-  color: #83818c;
-  padding: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  transition: .3s;
-  margin: 0 6px;
-  z-index: 1;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
-  position: relative;
-  
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #dfe2ea;
-    border-radius: 8px 8px 0 0;
-    opacity: 0;
-    transition: .3s;
-  }
+  color: #000;
 }
 
-.nav-item:not(.is-active):hover:before {
-  opacity: 1;
-  bottom: 0;
+body {
+
+  height: 100vh;
 }
 
-
-.nav-item:not(.is-active):hover { color: #333; }
-
-.nav-indicator {
+nav{
   position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  transition: .4s;
-  height: 5px;
-  z-index: 1;
-  border-radius: 8px 8px 0 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(0,0,0,.1);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-@media (max-width: 580px) {
-  .nav { overflow: auto; }
+a {
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  padding: 1em 0;
+  transition: .2s;
+}
+
+.line {
+  width: 120px;
+	height: 0px;
+  transition: .3s;
+}
+a:nth-child(1):hover{
+  color: var(--red);
+  transform: scale(1.1);
+}
+a:nth-child(2):hover{
+  color: var(--turqouise);
+  transform: scale(1.1);
+}
+a:nth-child(3):hover{
+  color: var(--blue);
+  transform: scale(1.1);
+}
+
+a:nth-child(1):hover ~ .line {
+  height: 3px;
+  background: var(--red);
+}
+a:nth-child(2):hover ~ .line {
+  height: 3px;
+  background: var(--turqouise);
+  transform: translate(120px);
+}
+a:nth-child(3):hover ~ .line {
+  height: 3px;
+  background: var(--blue);
+  transform: translate(240px);
 }
 
