@@ -397,8 +397,7 @@ body {
     transfom: scale(1);
   }
 }
-
-{
+* {
   box-sizing: border-box;
 }
 
@@ -471,3 +470,4 @@ body {
 @media (max-width: 580px) {
   .nav { overflow: auto; }
 }
+
