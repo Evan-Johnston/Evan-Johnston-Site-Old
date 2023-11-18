@@ -405,7 +405,7 @@ body {
   left:50%;
   transform:translate(-50%,-50%);
 }
-.download-btn {
+div.download-btn {
   width:200px;
   height:60px;
   text-align:center;
@@ -415,10 +415,10 @@ body {
   box-sizing:border-box;
   overflow:hidden;
 }
-.download-btn.btn-1 {
+div.download-btn.btn-1 {
   border:5px solid #00acee;
 
-.download-btn div {
+div.download-btn div {
   width:100%;
   height:100%;
   font-size:15px;
@@ -426,17 +426,17 @@ body {
   text-transform:uppercase;
   line-height:50px;
 }
-.download-btn.btn-1 .top {
+div.download-btn.btn-1 .top {
   background:#00acee;
 }
 
-.download-btn .bottom {
+div.download-btn .bottom {
   background:#eee;
   color:#222;
 }
-.download-btn .top {
+div.download-btn .top {
   transition:all 300ms ease-in-out;
 }
-.download-btn:hover .top {
+div.download-btn:hover .top {
   margin-top:-50px;
 }
