@@ -1,6 +1,11 @@
+body {
+  background:#111;
+  color:#fff;
+  font-family:"Open Sans",sans-serif;
+}
 .center {
   position:absolute;
-  top:80%;
+  top:50%;
   left:50%;
   transform:translate(-50%,-50%);
 }
