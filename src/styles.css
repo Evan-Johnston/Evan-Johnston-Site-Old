@@ -405,8 +405,8 @@ body {
   transform:translate(-50%,-50%);
 }
 .download-btn {
-  width:200px;
-  height:60px;
+  width:400px;
+  height:120px;
   text-align:center;
   cursor:pointer;
   margin:20px 0px;
